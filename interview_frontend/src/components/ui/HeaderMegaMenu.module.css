@@ -1,9 +1,13 @@
 .header {
-    height: rem(60px);
-    padding-left: var(--mantine-spacing-md);
-    padding-right: var(--mantine-spacing-md);
-    border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: rem(60px);
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  z-index: 10; /* To ensure it stays above other content */
+}
   
   .link {
     display: flex;
@@ -15,6 +19,7 @@
     color: mantine-color-black;
     font-weight: 500;
     font-size: var(--mantine-font-size-sm);
+    
   
     @media (max-width: 768px) { /* Replace with actual breakpoint value */
       height: rem(42px);
@@ -22,7 +27,7 @@
     }
   
     &:hover {
-      background-color:  lightsteelblue;
+       color:  rgb(38, 96, 223);
     }
   }
   

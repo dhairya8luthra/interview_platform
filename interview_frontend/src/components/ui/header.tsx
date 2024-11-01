@@ -97,12 +97,14 @@ import {
             <Logo />
   
             <Group h="100%" gap={0} visibleFrom="sm">
-              <a href="#" className={classes.link} style={{ color: 'white' }}>
+              <a href="#" className={classes.link} style={{ color: 'white' }} onMouseEnter={(e) => (e.currentTarget.style.color = ' rgb(38, 96, 223)')}
+  onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}>
                 Home
               </a>
               <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
                 <HoverCard.Target>
-                  <a href="#" className={classes.link} style={{ color: 'white' }}>
+                <a href="#" className={classes.link} style={{ color: 'white' }} onMouseEnter={(e) => (e.currentTarget.style.color = ' rgb(38, 96, 223)')}
+  onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}>
                     <Center inline>
                       <Box component="span" mr={5}>
                         Features
@@ -146,10 +148,12 @@ import {
                   </div>
                 </HoverCard.Dropdown>
               </HoverCard>
-              <a href="#" className={classes.link} style={{ color: 'white' }}>
+              <a href="#" className={classes.link} style={{ color: 'white' }} onMouseEnter={(e) => (e.currentTarget.style.color = '  ')}
+  onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}>
                 Learn
               </a>
-              <a href="#" className={classes.link} style={{ color: 'white' }}>
+              <a href="#" className={classes.link} style={{ color: 'white' }} onMouseEnter={(e) => (e.currentTarget.style.color = ' rgb(38, 96, 223)')}
+  onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}>
                 Academy
               </a>
             </Group>
